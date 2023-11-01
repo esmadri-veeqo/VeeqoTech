@@ -26,29 +26,6 @@ ul > li {
   display: inline-block;
 }
 
-ul > li > ul {
-  background: rgb(35,47,62);
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 100%;
-  opacity: 0;
-  pointer-events: none;
-  transition: all .2s ease;
-}
-
-ul > li > ul > li > ul {
-  background: rgb(35,47,62);
-  position: absolute;
-  min-width: 150px;
-  top: 0;
-  left: calc(100%);
-  opacity: 0;
-  pointer-events: none;
-  transition: all .2s ease;
-}
-
-
 header {
   height: 25vh;
   display: flex; 
@@ -90,7 +67,7 @@ header hgroup {
 
 .site {
   text-align: center;
-  background-color: #efefef;
+  background-color: #222;
   font-size: .7em;
   color: #a6a6a6;
 
@@ -98,16 +75,11 @@ header hgroup {
   width: auto!important;
 }
 
-.site a {
+/* .site a {
   color: #929292;
   text-decoration: none;
-  transition: all 0.2s; /* Add a smooth transition effect */
-}
-
-.site a:hover {
-  color: #222;
-  transform: scale(1.2);/* Increase the scale to make it larger */
-}
+  transition: all 0.2s; Add a smooth transition effect
+} */
 
 /* NAV */
 
@@ -119,16 +91,71 @@ header hgroup {
 }
 
 /* Main option */
-
-.madri-nav > a{
+.madri-nav > ul > li > span > a{
+  color: #929292;
+  text-decoration: none;
   padding:10px 30px;
   font-size:1.3em;
-  display:inline-block
+  display:inline-block;
+  transition: all 0.2s; /* Add a smooth transition effect */
 }
 
-.madri-nav > a:hover{
+.madri-nav > ul > li > span > a:hover{
   background:#333;
-  color:#fff
+  color:#fff;
+  transform: scale(1.2);/* Increase the scale to make it larger */
+}
+
+/* Sub menu option  */
+.madri-nav ul ul .nested-menu span { color: rgb(213,219,219); }
+
+.madri-nav ul > li > ul {
+  background: #dfdfdf;
+  position: absolute;
+  top: 100%;
+  min-width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .2s ease;
+  left: 30%;
+  padding-left: 0;
+}
+
+.madri-nav .nested-menu span {
+  width: 100%;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 5px 10px;
+  color: white;
+  transition: all .4s ease;
+}
+
+.nested-menu li a{
+  color: black;
+}
+
+.nested-menu > li a:hover {
+  background: #333;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.nested-menu li {
+  display: block;
+}
+
+.nested-menu {
+  position: relative;
+}
+
+.madri-nav > ul > li.nested-menu:hover > ul {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.madri-nav > ul > li > ul > li.nested-menu:hover > ul {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .site ~ *:not(.amazon-wiki-toc) {
@@ -136,20 +163,16 @@ header hgroup {
   margin-right: 20px;
 }
 
-
 #hierarchy {
   margin: 0 -40px;
-  /* padding: 10px 20px; */
   border-radius: 0;
   background-color: #222222a1;
   position: ABSOLUTE;
   z-index: 20;
-  /* box-shadow: 0 2px 0 2px rgba(0,0,0,.2); */
-  /* color: white; */
-  /* width: 100%; */
   top: 0;
 }
 
+/* Page options bar */
 #contentmenu > span, #contentmenu .btn, #contentmenu .btn-group{ 
   width: 100%;
 }
@@ -173,7 +196,6 @@ header hgroup {
 }
 
 .document-menu:hover {
-  /* transform: scale(1.2); */
   right: 0px;
 }
 
@@ -196,6 +218,7 @@ header hgroup {
   top: 0;
 }
 
+/* Page info  */
 span.wikilink:before {
   content: 'the coolest user ';
 }
