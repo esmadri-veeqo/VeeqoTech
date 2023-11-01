@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+.main{
+  padding-top: 0;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  font: 1em/1.5 "Lato", sans-serif;
+}
+
+body {
+  font-size: 1.3em;
+}
+
+header {
+  height: 25vh;
+  display: flex; 
+  justify-content: center;
+
+  margin: 0 -4vh !important;
+  width: auto !important;
+  
+  background: url(https://unsplash.imgix.net/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=857f07b76abac23a7fb7161cc7b12a46) center no-repeat;
+  background-size: cover;
+}
+header .content {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+hgroup:hover {
+    transform: scale(1.2);/* Increase the scale to make it larger */
+}
+
+header h1, header h2 {
+  margin: 0;
+}
+
+header h1 {
+    border-bottom: 2px solid #FFF !important;
+}
+
+header hgroup {
+  display: inline-block;
+  text-align: center;  
+  color: #fff;
+  border: 5px solid #fff;
+  padding: .5em 3em;
+  background-color: rgba(0, 0, 0, 0.25);
+  transition: all 0.2s; /* Add a smooth transition effect */
+}
+
+.site {
+  text-align: center;
+  background-color: #efefef;
+  font-size: .7em;
+  color: #a6a6a6;
+
+  margin: 0 -4vh!important;
+  width: auto!important;
+}
+
+.site a {
+  color: #929292;
+  text-decoration: none;
+  transition: all 0.2s; /* Add a smooth transition effect */
+}
+
+.site a:hover {
+  color: #222;
+  transform: scale(1.2);/* Increase the scale to make it larger */
+}
+
+.site nav{
+  top:0;
+  left:0;
+  background:#222;
+  width:100%
+}
+.site nav a{
+  padding:10px 30px;
+  font-size:1.3em;
+  display:inline-block
+}
+.site nav a:hover{
+  background:#333;
+  color:#fff
+}
+
+.site ~ *:not(.amazon-wiki-toc) {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+#hierarchy {
+  margin: 0 -40px;
+  /* padding: 10px 20px; */
+  border-radius: 0;
+  background-color: #222222a1;
+  position: ABSOLUTE;
+  z-index: 20;
+  /* box-shadow: 0 2px 0 2px rgba(0,0,0,.2); */
+  /* color: white; */
+  /* width: 100%; */
+  top: 0;
+}
+
+#contentmenu > span, #contentmenu .btn, #contentmenu .btn-group{ 
+  width: 100%;
+}
+
+#contentmenu .fa, #contentmenu .glyphicon{
+  padding-right: 7px;
+}
+
+#contentmenu .btn {
+  padding-left: 7px;
+  text-align: left;
+}
+
+.document-menu {
+  position: fixed;
+  z-index: 100;
+  top: 30%;
+  right: -105px;
+  width: auto !important;
+  transition: all 0.2s;
+}
+
+.document-menu:hover {
+  /* transform: scale(1.2); */
+  right: 0px;
+}
+
+#contentmenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.document-info{
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  background: #222222a1;
+  margin: 0;
+  text-align: right;
+  margin-top: 0 !important;
+  width: auto;
+  top: 0;
+}
+
+span.wikilink:before {
+  content: 'the coolest user ';
+}
+
+.document-info *, #hierarchy * {
+  color: white;
+}
+
+#xdocPrimaryOwner > em {
+  display: none;
+}
+
+.titleDivider, #document-title {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .site ~ *:not(.amazon-wiki-toc) {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #menuview, #sitewide-announcement-banner {
+      display: none;
+  }
+  .amazon-wiki-toc {
+      display: none;
+  }
+  .edit_section {
+      display: none;
+  }
+  .document-header {
+      opacity: 0;
+      pointer-events: none;
+  }
+}
