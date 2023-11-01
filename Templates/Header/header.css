@@ -17,6 +17,38 @@ body {
   font-size: 1.3em;
 }
 
+li {
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul > li {
+  display: inline-block;
+}
+
+ul > li > ul {
+  background: rgb(35,47,62);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .2s ease;
+}
+
+ul > li > ul > li > ul {
+  background: rgb(35,47,62);
+  position: absolute;
+  min-width: 150px;
+  top: 0;
+  left: calc(100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all .2s ease;
+}
+
+
 header {
   height: 25vh;
   display: flex; 
