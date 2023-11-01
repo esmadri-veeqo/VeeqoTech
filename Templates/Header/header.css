@@ -109,18 +109,24 @@ header hgroup {
   transform: scale(1.2);/* Increase the scale to make it larger */
 }
 
-.site nav{
+/* NAV */
+
+.madri-nav{
   top:0;
   left:0;
   background:#222;
   width:100%
 }
-.site nav a{
+
+/* Main option */
+
+.madri-nav > a{
   padding:10px 30px;
   font-size:1.3em;
   display:inline-block
 }
-.site nav a:hover{
+
+.madri-nav > a:hover{
   background:#333;
   color:#fff
 }
