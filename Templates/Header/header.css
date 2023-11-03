@@ -68,7 +68,7 @@ header hgroup {
 .site {
   text-align: center;
   background-color: #222;
-  font-size: .7em;
+  /* font-size: .7em; */
   color: #a6a6a6;
 
   margin: 0 -4vh!important;
