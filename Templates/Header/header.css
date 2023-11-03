@@ -13,9 +13,9 @@ html {
   font: 1em/1.5 "Lato", sans-serif;
 }
 
-.madri-nav *, .madri-header *{
+/* .madri-nav *, .madri-header *{
   font-size: 1em;
-}
+} */
 
 li {
   margin: 0 auto;
