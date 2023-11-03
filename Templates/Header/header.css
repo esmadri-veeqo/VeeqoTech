@@ -13,9 +13,13 @@ html {
   font: 1em/1.5 "Lato", sans-serif;
 }
 
-body {
+.madri-nav *, .madri-header *{
   font-size: 1.3em;
 }
+
+/* body {
+  font-size: 1.3em;
+} */
 
 li {
   margin: 0 auto;
