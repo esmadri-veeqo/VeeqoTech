@@ -145,6 +145,11 @@ body {
     color: white !important;
 }
 
+#nl-options {
+    display: flex;
+    justify-content: center;
+}
+
 /* .nl-buttom {
     background-color: #f00;
     width: 200px;
