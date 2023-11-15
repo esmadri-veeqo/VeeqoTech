@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#nl {
+    background-image: url("https://mcusercontent.com/efa797f64e734638be5b2f199/images/f573ff63-30e4-b04b-312e-eec9cab5fd2f.jpg");
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+
+    #nl-header {
+        align-items: center !important;
+    }
+
+    #nl-header, .nl-row {
+        flex-direction: column !important;
+    }
+
+    .nl-card {
+        width: 100% !important;
+    }
+
+    #nl {
+        background-image: none !important;
+    }
+
+    #nl-body {
+        padding: 0 10px !important;
+    }
+
+    .nl-main {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+}
+
+@media (prefers-color-scheme: dark ) {
+    .nl-divider{
+        border-top: 2px solid #ffffff !important;
+    }
+    .nl-main{
+        background-color: #1c1c1c !important;
+    }
+
+    .nl-main h1, .nl-main h2, .nl-main h3, .nl-main p, .nl-main code {
+        color: white !important;
+    }
+
+    
+
+}
+
+.nl-main {
+    max-width: 800px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.nl-divider{
+    background-color: transparent;
+    margin: 20px 18px;
+    height: 2px;
+    border-top: 2px solid #000000;
+}
+
+#nl-header {
+    display: flex;
+    padding: 10px 5px;
+}
+
+#nl-title {
+    padding: 40px 0;
+    text-align: right !important;
+}
+
+#nl-gif {
+    align-items: center;
+    display: flex;
+}
+
+.nl-main h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+.nl-main h2 {
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.nl-main h3 {
+    font-family: Arimo, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.nl-card p {
+    font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.nl-row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5%;
+    justify-content: space-evenly;
+}
+
+.nl-card pre {
+    white-space: pre-wrap;
+    text-align: left;
+    line-height: 1.1em;
+}
+
+.nl-card {
+    width: 40%;
+}
+
+.nl-output {
+    background-color: #302f2f;
+    border-radius: 5px;
+    padding: 0px 5px;
+    color: white !important;
+}
