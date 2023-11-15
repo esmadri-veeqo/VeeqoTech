@@ -75,12 +75,6 @@ header hgroup {
   width: auto!important;
 }
 
-/* .site a {
-  color: #929292;
-  text-decoration: none;
-  transition: all 0.2s; Add a smooth transition effect
-} */
-
 /* NAV */
 
 .madri-nav{
@@ -236,7 +230,7 @@ span.wikilink:before {
 }
 
 @media screen and (min-width: 1200px) {
-  .site ~ *:not(.amazon-wiki-toc) {
+  .site ~ *:not(.amazon-wiki-toc):not(#nl) {
       max-width: 900px;
       margin-left: auto;
       margin-right: auto;
