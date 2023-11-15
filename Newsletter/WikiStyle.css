@@ -1,3 +1,9 @@
+#plain-bg  {
+    width: calc(100% + 8vh)!important;
+    margin: 0 -4vh !important;
+    max-width: calc(100% + 8vh)!important;
+}
+
 .nl-main h1 {
     border-bottom: none !important;
     padding-bottom: 0 !important;
