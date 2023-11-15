@@ -30,6 +30,8 @@
 #nl {
     max-width: 1000px !important;
     margin: -30px auto auto !important;
+    background: none;  
+    /* Comment if want other style */
 }
 
 .nl-main {
