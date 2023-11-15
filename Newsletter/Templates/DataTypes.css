@@ -12,6 +12,10 @@ body {
     justify-content: center;
 }
 
+#plain-bg {
+    background-color: white;
+}
+
 @media only screen and (max-width: 480px) {
 
     #nl-header {
@@ -45,7 +49,7 @@ body {
     .nl-divider{
         border-top: 2px solid #ffffff !important;
     }
-    .nl-main{
+    .nl-main, #plain-bg{
         background-color: #1c1c1c !important;
     }
 

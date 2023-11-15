@@ -12,12 +12,16 @@
     white-space: pre-wrap;
     text-align: left;
     border: none !important;
-    color: none !important;
+    color: unset !important;
     background-color: none !important;
     background: none !important;
 }
 
 #nl {
-    width: auto !important;
-    margin: 0 -30px !important;
+    max-width: 1000px !important;
+    margin: -30px auto auto !important;
+}
+
+.nl-main {
+    max-width: 900px !important;
 }
