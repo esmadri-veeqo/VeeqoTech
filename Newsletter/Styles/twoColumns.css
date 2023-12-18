@@ -56,9 +56,6 @@ body {
     .nl-main h1, .nl-main h2, .nl-main h3, .nl-main p, .nl-main code {
         color: white !important;
     }
-
-    
-
 }
 
 .nl-main {
@@ -113,12 +110,9 @@ body {
     text-transform: uppercase;
 }
 
-.nl-card p {
-    font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1.5;
-    text-align: left;
+.description {
+    margin: 0 7px 18px;
+    font-size: 15px !important;
 }
 
 .nl-row {
@@ -128,14 +122,34 @@ body {
     justify-content: space-evenly;
 }
 
-.nl-card pre {
+.nl-row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5%;
+    justify-content: space-evenly;
+}
+
+.nl-col {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nl-card > pre {
     white-space: pre-wrap;
     text-align: left;
     line-height: 1.1em;
 }
 
-.nl-card {
+.nl-row > .nl-card {
     width: 40%;
+}
+
+.nl-col .nl-card {
+    width: 90%;
 }
 
 .nl-output {

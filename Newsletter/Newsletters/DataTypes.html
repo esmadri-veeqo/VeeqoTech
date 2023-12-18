@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="../Styles/twoColumns.css"/>
+</head>
+
+<section id="plain-bg">
+<section id="nl">
+    <center>
+        <div class="nl-main">
+            <div class="nl-divider"></div>
+            <div class="nl-section nl-row" id="nl-header">
+                <div class="nl-card" id="nl-title">
+                    <h1>Ruby essentials</h1>
+                    <h2>Data Types</h2>
+                </div>
+                <div class="nl-card" id="nl-gif">
+                    <img width="190" height="auto" src="https://mcusercontent.com/efa797f64e734638be5b2f199/images/4b368393-38b0-8e5d-ccb8-6437a8d95a98.gif">
+                </div>
+            </div>
+            <div class="nl-divider"></div>
+            <div class="nl-section" id="nl-body">
+                <div class="nl-row">
+                    <div class="nl-card">
+                        <h3>Numbers</h3>
+                        <p>Series of digits, using a dot as a decimal mark, like integers or float</p>
+                        <pre><code>
+# float type
+distance = 0.1 
+# integer and float type
+time = 9.87 / 3600
+speed = distance / time 
+puts "The average speed is #{speed} km/h"
+                        </code></pre>
+                        <div class="nl-output">
+                            <pre><code>
+>> The average speed is 36.4741 km/h
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="nl-card">
+                        <h3>BOOLEANS</h3>
+                        <p>Represents only one bit of information either true or false</p>
+                        <pre><code>
+is_running = false
+if is_running
+  puts “System running“
+else
+  puts “System down“ 
+end
+                        </code></pre>
+                        <div class="nl-output">
+                            <pre><code>
+>> System down
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="nl-card">
+                        <h3>STRINGS</h3>
+                        <p>Group of letters that represent a sentence or a word</p>
+                        <pre><code>
+puts "String Data Type";
+puts 'escape using "\\"';
+puts 'That\'s right';
+                        </code></pre>
+                        <div class="nl-output">
+                            <pre><code>
+>> String Data Type
+>> escape using "\"
+>> That's right
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="nl-card">
+                        <h3>HASHES</h3>
+                        <p>A hash assign its values to its key</p>
+                        <pre><code>
+colors = {
+  "red" => 0xf00,
+  "green" => 0x0f0,
+  "blue" => 0x00f
+}
+colors.each do |key, value|
+  puts key, " is ", value, "\n"
+end 
+                        </code></pre>
+                        <div class="nl-output">
+                            <pre><code>
+>> System down
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="nl-card">
+                        <h3>ARRAYS</h3>
+                        <p>Stores data or list of data and It can contain all types of data</p>
+                        <pre><code>
+my_array = [10, 3.14, "lastElement"]
+my_array.each do |i|
+  puts i
+end
+                        </code></pre>
+                        <div class="nl-output">
+                            <pre><code>
+>> 10
+>> 3.14
+>> lastElement
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="nl-card">
+                        <h3>SYMBOLS</h3>
+                        <p>It is preceded by a colon (:). They are used instead of strings because they can take up much less memory</p>
+                        <pre><code>
+my_domains = {
+  :amazon => "amazon.com",
+  :veeqo => "veeqo.com"
+}
+puts domains[:veeqo]
+puts domains[:amazon]
+                        </code></pre>
+                        <div class="nl-output">
+                            <pre><code>
+>> veeqo.com
+>> amazon.com
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nl-divider"></div>
+            <div class="nl-section" id="nl-options">
+                <div class="nl-buttom">
+                    <a href="https://w.amazon.com/bin/view/VeeqoTech/Ruby/DataTypes/" class="fill-div">Check the wiki</a>
+                </div>
+            </div>
+            <div class="nl-section" id="nl-footer"></div>
+            <div class="nl-divider"></div>
+        </div>
+    </center>
+</section>
+</section>
+</html>

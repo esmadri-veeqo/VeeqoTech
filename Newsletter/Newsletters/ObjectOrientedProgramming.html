@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="../Styles/oneColumn.css"/>
+</head>
+<section id="plain-bg">
+<section id="nl">
+    <center>
+        <div class="nl-main">
+            <div class="nl-divider"></div>
+            <div class="nl-section nl-row" id="nl-header">
+                <div class="nl-card" id="nl-title">
+                    <h1>Ruby essentials</h1>
+                    <h2>Object-oriented programming basic concepts</h2>
+                </div>
+                <div class="nl-card" id="nl-gif">
+                    <img width="190" height="auto" src="https://mcusercontent.com/efa797f64e734638be5b2f199/images/4b368393-38b0-8e5d-ccb8-6437a8d95a98.gif">
+                </div>
+            </div>
+            <p class="description">Hello hello, in the last newsletter we were taking about <strong>Common Array Methods</strong>
+                and some concepts like array or methods, in case you don't remember what is an array take a look at <a href="https://w.amazon.com/bin/view/VeeqoTech/Ruby/DataTypes">this Newsletter</a>,
+                in case you don't know what is a method, this newsletter is for you
+            </p>
+            <div class="nl-divider"></div>
+            <div class="nl-section" id="nl-body">
+                <div class="nl-col">
+                    <div class="nl-card">
+                        <h3>What is object-oriented programming or OOP?</h3>
+                        <p>It's a programming model that organizes software design around data, or objects, rather than functions and logic.</p>
+                        <img src="https://xwiki-attachment-prod.s3.us-west-2.amazonaws.com/xwiki/VeeqoTech/Ruby/BasicObjectOrientedProgramming/WebHome/image__3_-removebg-preview%20%281%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231218T181430Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Credential=AKIA35MJYBZNVSYJTGM4%2F20231218%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Signature=d76b55d9c257737571f2748f00917ecf81e586153c25fc9b8d6e3942a0d1349c">
+                    </div>
+                    <div class="nl-card">
+                        <h3>Structure of object-oriented programming</h3>
+                        <div class="nl-row">
+                            <div class="nl-card">
+                                <h2>Classes</h2>
+                                <p>User-defined data types that act as a shell or structure to create new objects, with specific attributes and methods</p>
+                                <pre><code>
+class Customer
+   def initialize(id, name, addr)
+      @cust_id = id
+      @cust_name = name
+      @cust_addr = addr
+   end
+end
+                                </code></pre>
+                            </div>
+                            <div class="nl-card">
+                                <h2>Objects</h2>
+                                <p>Are <strong>instances</strong> created using a class with specifically defined data.</p>
+                                <pre><code>
+cust1 = Customer.new("1", "John", "Wisdom Apartments, Ludhiya")
+
+cust2 = Customer.new("2", "Poul", "New Empire road, Khandala")
+                                </code></pre>
+                            </div>
+                            <div class="nl-card">
+                                <h2>Methods</h2>
+                                <p>Are <strong>functions</strong> that are defined inside a class that describe the behaviors of an object.</p>
+                                <pre><code>
+class Customer
+    def hello
+        puts "Hello Ruby!"
+    end
+end
+
+cust1 = Customer.new()
+cust1.hello
+                                </code></pre>
+                                <div class="nl-output">
+                                    <pre><code>
+>> Hello Ruby!
+                                    </code></pre>
+                                </div>
+                            </div>
+                            <div class="nl-card">
+                                <h2>Attributes</h2>
+                                <p>Objects will have data stored in the attributes field. Like in the previous example, we added the next attribute to the Customer class</p>
+                                <pre><code>
+@cust_id = id
+@cust_name = name
+@cust_addr = addr
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="description">There are more OOP concepts like <strong>Abstraction, Inheritance, Polymorphism</strong> we are going to talk in the future and also there are Ruby OOP concepts that are really interesting so stay tuned, thank you! 
+            </p>
+            <div class="nl-divider"></div>
+            <div class="nl-section" id="nl-options">
+                <div class="nl-buttom">
+                    <a href="https://w.amazon.com/bin/view/VeeqoTech/Ruby/DataTypes/" class="fill-div">Check the wiki</a>
+                </div>
+            </div>
+            <div class="nl-section" id="nl-footer"></div>
+            <div class="nl-divider"></div>
+        </div>
+    </center>
+</section>
+</section>
+</html>
