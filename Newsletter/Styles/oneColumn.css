@@ -53,9 +53,13 @@ body {
         background-color: #1c1c1c !important;
     }
 
-    .nl-main h1, .nl-main h2, .nl-main h3, .nl-main p, .nl-main code {
+    .nl-main h1, .nl-main h2, .nl-main h3, .nl-main h4, .nl-main p, .nl-main {
         color: white !important;
     }
+}
+
+code {
+    color: #a8a8a8 !important;
 }
 
 .nl-main {
@@ -100,6 +104,11 @@ body {
     font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
     font-size: 28px;
     font-weight: 100;
+}
+
+.nl-main h4 {
+    font-family: Arimo, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: left;
 }
 
 .nl-main h3 {
