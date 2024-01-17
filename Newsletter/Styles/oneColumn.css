@@ -3,6 +3,11 @@ body {
     padding: 0;
 }
 
+.nl-main img {
+    width: inherit;
+    height: auto;
+}
+
 #nl {
     background-image: url("https://mcusercontent.com/efa797f64e734638be5b2f199/images/f573ff63-30e4-b04b-312e-eec9cab5fd2f.jpg");
     margin: 0;
